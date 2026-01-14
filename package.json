@@ -2,15 +2,11 @@
   "name": "electronlab",
   "version": "1.0.0",
   "description": "A cross-platform desktop app built with Electron.js for learning desktop development.",
-<<<<<<< HEAD
-  "main": "main/main.ts",
-=======
-  "main": "dist/index.js",
->>>>>>> 70c49020baac35e0a4057de84aed3c426015fd23
+  "main": "dist/main.js",
   "scripts": {
-
+    "watch": "tsc -w",
     "build": "tsc",
-    "start": "electron ."
+    "start": "npm run build && electron ."
   },
   "devDependencies": {
     "electron": "^39.2.7",
